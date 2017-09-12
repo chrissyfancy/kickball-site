@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1><%= @team_name %></h1>
+
+    <ul>
+      <% @team_positions.each do |player| %>
+        <% player.each do |position, name| %>
+          <li><%= name %>: <%= position %></li>
+        <% end %>
+      <% end %>
+    </ul>
+    <a href="/teams">Go Back to All Teams</a>
+  </body>
+</html>

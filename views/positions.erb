@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Kickball Positions</h1>
+
+    <ul>
+      <% @positions.each do |position| %>
+        <li><a href="/positions/<%= position.downcase %>"><%= position %></a></li>
+      <% end %>
+    </ul>
+
+    <div>
+      <a href="/teams">See By Teams</a>
+    </div>
+    <div>
+      <a href="/">Go To Homepage</a>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1><%= @position_name %></h1>
+
+    <ul>
+      <% @players_position.each do |player| %>
+        <li><%= player %></a></li>
+      <% end %>
+    </ul>
+
+    <a href="/positions">All Positions</a>
+  </body>
+</html>
